@@ -1,0 +1,417 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } /* remember to define focus styles! */ :focus { outline: 0; } /* remember to highlight inserts somehow! */ ins { text-decoration: none; } del { text-decoration: line-through; } /* tables still need 'cellspacing="0"' in the markup */ table { border-collapse: collapse; border-spacing: 0; }
+*{
+    padding: 0;margin: 0;
+}
+body{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background: #1d1d1d;
+}
+body,html{
+    width:100%;
+    height:100%;
+}
+/*头部*/
+.topNav{
+    width:100%;
+    height:40px;
+    background-color: #161927;
+    color:#fff;
+}
+.topNav .coin-money{
+    width:50%;
+    overflow: hidden;
+    float:left;
+    height:22px;
+    margin-top: 8px;
+}
+.topNav .coin-money>div{
+    float:left;
+    line-height: 22px;
+    margin-right: 20px;
+}
+.topNav .coin-money>div p{
+    display: inline;
+}
+.topNav .scollMoney{
+    float:left;
+    line-height: 40px;
+    margin-left: 3%;
+}
+.topNav .scollMoney p{
+    display: inline;
+}
+.language{
+    position: relative;
+}
+.language .changeZi{
+    width:110px;
+    height:48px;
+    line-height: 48px;
+    text-align: right;
+    cursor: pointer;
+    color: #fff
+}
+.language .changeZi img{
+    vertical-align: middle;
+    padding: 5px;
+    width: 35px;
+    height: 26px
+}
+
+ .language ul{
+    display: block;
+    position: absolute;
+    right:2px;
+    top:48px;
+    z-index: 2222;
+    width:100%;
+    height:auto;
+    background: rgba(23,26,41,0.8);
+    display: none;
+}
+.language ul li{
+    line-height: 40px;
+    text-align: center;
+}
+.language ul li img{
+    vertical-align: middle;
+    padding:0 5px;
+    width: 35px;
+    height: 16px
+}
+.language ul>li>a{
+    color:#fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+.navbar{
+    background-color: #0f0f0f;
+    padding: 0;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    min-height: 44px;
+}
+#example-navbar-collapse {
+    padding-right: 0;
+}
+.container-fluid{
+    box-sizing: border-box;
+}
+.navbar .navbar-header{
+
+}
+
+
+.navbar .navbar-brand{
+    display: block;
+    width:130px;
+    height:34px;
+    margin-top: 7px;
+    padding: 0;
+}
+.navbar .navbar-toggle{
+    border: 1px solid #fff;
+    background: #fff;
+    margin-top:5px;
+    padding: 0;
+}
+.navbar .navbar-brand{
+    margin-left: 0!important;
+}
+.navbar .navbar-header img{
+    width:90%;
+    height:auto;
+    margin: 4px 0;
+}
+.navbar .btn.first{
+    padding:0px ;
+}
+.navbar .btn{
+    border:none;
+    background: none;
+    color:#fff;
+    line-height: 48px;
+    font-size: 16px;
+    padding: 0px;
+}
+.navbar-nav>li{
+    width:110px;
+    height:48px;
+    text-align: center;
+    color:#a1a1a1;
+    line-height: 48px;
+}
+.navbar-nav>li.active{
+    background: #373737;
+    color:#fff;
+}
+.navbar-nav>li.active a{
+    background: #373737;
+    color:#fff;
+}
+.navbar-nav>li>a{
+    display: block;
+    width:100%;
+    height:100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 48px;
+    color:#a1a1a1;
+}
+.navbar-nav>li.loginBtn{
+    cursor: pointer
+}
+#Logout{
+    cursor: pointer
+}
+.navbar-nav>li.loginBtn a{
+    display: inline-block;
+    width:auto;
+}
+.navbar-default .navbar-nav>li>a{
+    color:#fff;
+}
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{
+    color:#fff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover{
+    background: none;
+    color:#fff;
+}
+/*个人信息*/
+.navbar-default .navbar-nav>li .vipHeader{
+    position: relative;
+}
+.navbar-default .navbar-nav>li .vipHeader>a{
+    display: inline-block;
+    width:36px;
+    height:36px;
+
+    border-radius: 50%;
+    background: red;
+    vertical-align: middle;
+}
+.navbar-default .navbar-nav>li .vipHeader .vipInfo{
+    position: absolute;
+    top:48px;
+    width:250px;
+    height:auto;
+    right:0;
+    background: #191919;
+    z-index: 130;
+    display: none;
+
+}
+.vipInfo .personFor{
+    padding: 10px 30px;
+    line-height: 20px;
+    text-align: left;
+    background:#010101;
+}
+.vipInfo .personFor p.userName{
+    font-size: 16px;
+    font-weight: 800;
+    color:#fff;
+}
+.vipInfo .personFor .userInfo{
+    display: flex;
+    flex: 1;
+    height:36px;
+    line-height: 36px;
+
+}
+.vipInfo .personFor .userInfo .look{
+    display: block;
+    width:50px;
+    height:26px;
+    font-size: 14px;
+    line-height: 26px;
+    background: #fff;
+    color:#000;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.vipInfo .balanceInfo{
+    overflow: hidden;
+    margin-top: 20px;
+    border-bottom: 1px solid #292929;
+    padding: 0 30px 10px;
+}
+.vipInfo .balanceInfo .left{
+    float: left;
+    color:#fff;
+}
+.vipInfo .balanceNum{
+    float:right;
+    text-align: right;
+    font-size: 14px;
+    color:#fff;
+    overflow: hidden;
+
+
+}
+.vipInfo .balanceNum p{
+    line-height: 20px;
+    text-align: right;
+}
+.vipInfo .balanceNum .recharge{
+    display: block;
+    width:50px;
+    margin-top: 10px;
+    height:26px;
+    background-color: #fff;
+    color:#000;
+    text-align: center;
+    line-height: 26px;
+    float: right;
+}
+.infoUnread{
+    padding: 10px 30px;
+    overflow: hidden;
+}
+.infoUnread a{
+    display: block;
+    text-align: left;
+    color:#fff;
+    line-height: 20px;
+
+}
+.infoUnread a.quit{
+    width:50px;
+    height:26px;
+    text-align: center;
+    line-height: 26px;
+    color:#fff;
+    border:1px solid #eee;
+    float:right;
+    text-decoration: none;
+}
+.infoUnread p span{
+    float: right;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background: #ac6c19;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
+    /*头部*/
+
+/*footer底部*/
+
+.footer{
+    height:auto;
+    background: #0f0f0f;
+}
+.footerIcon{
+    width:100%;
+    height: auto;
+    padding: 30px 0;
+    background: #171717;
+
+}
+.footerIcon .icoLogo{
+    padding-left:50px;
+}
+.footerIcon .shareIcon{
+    text-align: right;
+}
+.footerIcon .shareIcon a{
+    display: inline-block;
+    width:56px;
+    margin: 0 10px;
+}
+.footerIcon .shareIcon a button{
+    width:100%;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    display: inline-block;
+    vertical-align:baseline;
+}
+.footerIcon .shareIcon a img{
+    width:100%;
+    height:auto;
+}
+
+.footer .about{
+    padding: 25px 35px 20px 50px;
+}
+.popover-content img{
+    padding-left: 10px;
+}
+
+.footer .about .bottom h3{
+    font-size: 18px;
+    font-weight: normal;
+    color:#a5a4a4;
+    text-align: left;
+    padding-bottom: 5px;
+}
+.footer .bottom p{
+    font-size: 14px;
+    color:#a5a4a4;
+    line-height: 30px;
+    letter-spacing:1px;
+}
+.footer .bottom ul{
+    overflow: hidden;
+}
+.footer .bottom li{
+    width:50%;float: left;
+    font-size: 14px;
+    color:#a5a4a4;
+    line-height: 30px;
+}
+.footer .bottom .aboutUs{
+    width:100%;
+    border-right:1px solid #202020;
+    padding-right: 10%;
+}
+.footer .icoInfo{
+    padding: 40px 0;
+}
+.footer .icoInfo .linkPriend{
+    text-align: center;
+    font-size: 18px;
+    color:#a5a4a4;
+    padding-bottom: 20px;
+}
+.footer .icoInfo .linkPriend span{
+    font-size: 18px;
+    color:#a5a4a4;
+}
+.footer .icoInfo .linkPriend a{
+    font-size: 16px;
+    color:#a5a4a4;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.footer .icoInfo .linkPriend~p{
+    font-size: 16px;
+    color:#a5a4a4;
+    text-align: center;
+}
+/*footer底部*/
+@media (min-width: 1170px){
+    .navbar #example-navbar-collapse{
+        float:right;
+    }
+    #example-navbar-collapse{
+        padding-right: 0;
+
+    }
+}
+@media (min-width: 768px){
+    .navbar #example-navbar-collapse{
+        float:right;
+    }
+}
+@media (max-width: 640px) {
+
+}

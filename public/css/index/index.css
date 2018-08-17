@@ -1,0 +1,1278 @@
+/*首页ico项目内容*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.icoProduce{
+    width:100%;
+    padding: 0;
+    margin: 0;
+    background: url(../../images/bg1_01.png) no-repeat ;
+    background-size: 100% 100%;
+}
+.leadWorld{
+    text-align: center;
+    font-size: 26px;
+    background: none;
+    color:#fff;
+    padding: 40px 0 5px;
+    margin: 0 auto 10px;
+}
+.leadWorld:after{
+    content: "";
+    width:75px;
+    display: block;
+    margin: 5px auto;
+    height:2px;
+    background: #fff;
+}
+.icoProduce .row{
+    margin: 0;
+}
+.flexBig{
+    width:85%;
+    margin: 0 auto;
+}
+.picShow{
+    width:100%;
+    /*min-width:310px;*/
+    /*min-height:310px;*/
+    position: relative;
+    margin: 0 auto;
+}
+.picShow img{
+    width:100%;
+    height:100%;
+}
+/*链接图标*/
+.picShow .linkIcon{
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    z-index: 123;
+}
+.picShow .produceState{
+    width:100%;
+    height:100%;
+    cursor: default;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    overflow: visible;
+    border: 0px solid rgba(0,0,0,0.7);
+    z-index: 111;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.picShow .productTime{
+    font-size: 16px;
+    line-height: 34px;
+    color:#fff;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background: rgba(20,73,134,0.8);
+    height:34px;
+    text-align: center;
+    width:100%;
+    z-index: 112;
+}
+
+.produceWord .productName{
+    width:100%;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+    color:#fff;
+    height:60px;
+    background: -ms-linear-gradient(top, #1e1e1e,  #000);        /* IE 10 */
+    background:-moz-linear-gradient(top, #1e1e1e,  #000);/*火狐*/
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#1e1e1e), to(#000));/*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1e1e1e), to(#000));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #1e1e1e, #000);   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #1e1e1e, #000);  /*Opera 11.10+*/
+}
+.produceWord .wordBlack{
+    width:100%;
+    margin: 0 auto;
+    background: #191919;
+}
+
+.produceWord .wordBlack .productInfo{
+    width:90%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    color:#a8a8a8;
+    padding-top: 10px;
+    max-height: 60px;
+    overflow: hidden;
+}
+.produceWord .wordBlack .proCoin{
+    font-size: 22px;
+    padding: 10px 0;
+    color:#bba75c;
+    text-align: center;
+    line-height: 24px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.produceWord .wordBlack .proCoin span{
+    display: inline-block;
+    margin-top: 2px;
+    line-height: 24px;
+    vertical-align: middle;
+
+}
+.produceWord .wordBlack .proCoin img{
+    display: inline-block;
+    width:24px;
+    height:24px;
+    vertical-align: middle;
+    margin-right:5px;
+}
+
+
+
+.moreIco{
+    width:190px;
+    height:44px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    background: #202020;
+    margin: 20px auto;
+    font-size: 16px;
+    margin: 50px auto;
+}
+.moreIco a{
+    display: block;
+    width:100%;
+    height:100%;
+    line-height: 44px;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+/*宗旨内容*/
+.bigAim{
+    background: url(../../images/bg1_02.png) no-repeat;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-size: 100% 100%;
+}
+
+.icoAim h3{
+
+
+    text-align: center;
+    font-size: 26px;
+    background: none;
+    color:#fff;
+    padding: 60px 0 10px;
+    width:200px;
+    margin: 0 auto 10px;
+    /*border-bottom:2px solid #fff;*/
+}
+.icoAim h3:after{
+    content: "";
+    width:75px;
+    display: block;
+    margin: 10px auto 0;
+    height:2px;
+    background: #fff;
+}
+.icoAim .word{
+    font-size: 16px;
+    line-height: 20px;
+    color:#fff;
+    width:90%;margin: 0 auto;
+}
+.container.purpose{
+    margin: 30px auto 25px;
+    width:88%;
+
+    /*margin: 0 auto;*/
+}
+.icoAim .purposeIcon{
+    width:75%;
+
+    padding-bottom: 80%;
+    height:0;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0% auto 10%;
+
+}
+.icoAim .purposeIcon img{
+    width:100%;
+}
+.icoAim .iconWord{
+    margin-bottom: 20px;
+}
+.icoAim .iconWord p{
+
+    font-size: 20px;
+    color:#a89350;
+
+    text-align: center;
+}
+
+
+/*投资建议*/
+.invest{
+    width:93%;
+    height:200px;
+    margin: 40px auto;
+    border-radius: 10px;
+    background: url(../../images/investBg.png) no-repeat;
+
+}
+.invest h3{
+    font-size: 24px;
+    text-align: center;
+    padding: 40px 0 15px;
+}
+.invest .leadWorld{
+
+}
+.invest .advise{
+    font-size: 14px;
+    line-height: 20px;
+    color:#a8a8a8;
+    width:96%;
+    margin: 0 auto;
+}
+
+/*投资人信息*/
+.investPer{
+    margin: 40px auto;
+    width:90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.person{
+    margin: 0 5px 20px;
+    border-radius: 10px;
+    height:auto;
+    background: #292929;
+    overflow: hidden;
+    box-shadow: 0 8px 6px #111;
+}
+.person .personSpeak{
+    padding: 20px;
+    line-height: 24px;
+    font-size: 14px;
+    min-height: 140px;
+    background: #222;
+    color:#a8a8a8;
+}
+.person dl{
+    overflow: hidden;
+    padding:20px 30px;
+}
+.person dl dt{
+    float:left;
+    width:30%;
+    padding-bottom: 30%;
+    height:0;
+    border-radius: 10px;
+}
+.person dl dt img{
+    width:100%;
+    height:auto;
+}
+.person dl dd{
+    float:left;
+    margin-left: 25px;
+    margin-top: 20px;
+    min-height: 100px;
+    color:#fff;
+}
+.person dl dd h4{
+    
+    font-size: 20px;
+    line-height: 36px;
+}
+.person dl dd p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/*合作伙伴*/
+.partner{
+    margin: 0px auto;
+    background: url(../../images/hezuoBG.png) no-repeat;
+    background-size:100% 100%;
+    padding: 30px 0;
+}
+.partner h4{
+    width:15%;
+    text-align: center;
+    font-size: 26px;
+}
+.partnerIcon ul{
+    display: flex;
+    flex:1;
+}
+.partnerIcon ul li{
+    margin: 20px 30px;
+    margin: 0 auto;
+    height:70px;
+
+}
+.partnerIcon ul li a{
+    display: block;
+    width:100%;
+    height:70px;
+    vertical-align: middle;
+    display: table-cell; //主要是这个属性
+text-align: center;
+}
+.partnerIcon ul li a img{
+    width:100%;
+    height:auto;
+}
+.partnerIcon ul li a.small{
+    padding-top: 10px;
+}
+
+.contactUs{
+    width:100%;
+    height:auto;
+    background: url(../../images/bg1_03.png) no-repeat;
+}
+.contactEmail{
+    padding: 20px 0;
+    color:#fff;
+    font-size: 16px;
+}
+.contactEmail .row{
+    margin-top: 30px;
+}
+.contactEmail .advise{
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+.contactEmail .advise .input{
+    width:100%;
+    height:30px;
+    border:1px solid #999;
+    background: #9f9f9f;
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px #7f7f7f inset;
+}
+.contactEmail .advise.codeInter{
+    padding-top: 15px;
+}
+.contactEmail .advise .codeInput{
+    height:30px;
+    border:1px solid #999;
+    background: #9f9f9f;
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px #7f7f7f inset;
+}
+.contactEmail .advise .codeBox{
+    display: block;height:30px;
+}
+.contactEmail .advise .codeBox img{
+    width:auto;
+    height:auto;
+}
+.contactEmail .advise a.col-sm-3{
+    padding-top: 6px;
+}
+.contactEmail .advise p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contactEmail .advise span{
+
+}
+.contactEmail .advise .topM{
+    margin-top: 53px;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: normal;
+    color:#a5a4a4;
+    letter-spacing: 3px;
+
+}
+.contactEmail .advise .topM:before{
+    content: "";
+    display: inline-block;
+    width:10px;height:10px;
+    background: red;border-radius: 5px;
+    margin-right: 5px;
+}
+.contactEmail .advise{
+
+}
+.contactEmail textarea{
+    resize: none;
+    width:100%;
+    margin-right: 30px;
+    min-height: 120px;
+    border: 1px solid #999;
+    background: #9f9f9f;
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px #7f7f7f inset;
+}
+.contactEmail .right{
+}
+.contactEmail .single{
+    width:110px;
+    height:45px;
+    font-size: 16px;
+    background: none;
+    margin-top: 43px;
+    background:#404f8b;
+    border-radius: 5px;
+    border: none;
+
+}
+/*首页ico项目内容结束*/
+
+
+/**cavas animation begin**/
+.intro-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    display: none;
+}
+
+h1 {
+    font-family: 'brandon-grotesque', sans-serif;
+    
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+@media screen and (min-width: 860px) {
+    h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+}
+.button {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'brandon-grotesque', sans-serif;
+    text-transform: uppercase;
+    min-width: 200px;
+    margin-top: 30px;
+}
+.button:hover .border {
+    box-shadow: 0px 0px 10px 0px white;
+}
+.button:hover .border .left-plane, .button:hover .border .right-plane {
+    transform: translateX(0%);
+}
+.button:hover .text {
+    color: #121212;
+}
+.button .border {
+    border: 1px solid white;
+    transform: skewX(-20deg);
+    height: 32px;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    transition: .10s ease-out;
+}
+.button .border .left-plane, .button .border .right-plane {
+    position: absolute;
+    background: white;
+    height: 32px;
+    width: 100px;
+    transition: .15s ease-out;
+}
+.button .border .left-plane {
+    left: 0;
+    transform: translateX(-100%);
+}
+.button .border .right-plane {
+    right: 0;
+    transform: translateX(100%);
+}
+.button .text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .15s ease-out;
+}
+.sky-container {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    margin: -85px auto 0;
+    right: 0;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    opacity: 0;
+    display: none;
+}
+.sky-container-content p{
+    margin: 0;
+    padding: 0;
+    font-family: 'brandon-grotesque', sans-serif;
+}
+@media screen and (min-width: 860px) {
+    .sky-container-content .content3 {
+        font-size: 30px;
+        line-height: 90px;
+        font-weight: lighter;
+    }
+    .sky-container-content .content2{
+        font-size: 50px;
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .sky-container-content .content3 {
+        font-size: 20px;
+        line-height: 80px;
+        font-weight: lighter;
+    }
+    .sky-container-content .content2{
+        font-size: 40px;
+        line-height: 80px;
+    }
+}
+.twitter:hover a {
+    transform: rotate(-45deg) scale(1.05);
+}
+.twitter:hover i {
+    color: #21c2ff;
+}
+.twitter a {
+    bottom: -40px;
+    right: -75px;
+    transform: rotate(-45deg);
+}
+.twitter i {
+    bottom: 7px;
+    right: 7px;
+    color: #00ACED;
+}
+
+.social-icon a {
+    position: absolute;
+    background: white;
+    color: white;
+    box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    transform-origin: 50% 50%;
+    transition: .15s ease-out;
+}
+.social-icon i {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1000;
+    transition: .15s ease-out;
+}
+
+.youtube:hover a {
+    transform: rotate(45deg) scale(1.05);
+}
+.youtube:hover i {
+    color: #ec4c44;
+}
+.youtube a {
+    bottom: -40px;
+    left: -75px;
+    transform: rotate(45deg);
+}
+.youtube i {
+    bottom: 7px;
+    left: 7px;
+    color: #E62117;
+}
+.bottom-container{
+    position: absolute;
+    bottom: 100px;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    opacity: 0;
+}
+.botImgBg{
+    margin: 40px auto 0;
+    width:50px;
+    height:50px;
+    cursor: pointer;
+}
+.downBg{
+    width:50px;
+    height:50px;
+    display: inline-block;
+    background: url("../../images/down.png") no-repeat;
+}
+.topNav,header{
+    display: none;
+}
+.canvas{
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+.canvasAnimate{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.topNav{
+    top:0;
+    left: 0;
+    z-index: 161;
+}
+header{
+    top:40px;
+    width: 100%;
+    left:0;
+    z-index: 160;
+}
+/*canvas animation end*/
+
+
+/*canvas percent begin*/
+.canvasPer{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    margin: -17px auto 0;
+    right: 0;
+    left: 0;
+    z-index: 160;
+    opacity: 0;
+    transition: opacity 1.5s linear;
+}
+.picShow:hover .canvasPer,.stateContext{
+    opacity: 1;
+}
+.picShow:hover .stateContext{
+    opacity: 1;
+    transition: opacity 1.5s linear;
+}
+/*canvas percent end*/
+.timePic{
+    width: 50%;
+    height: 50%;
+    cursor: auto;
+}
+.timePic img{
+    width:100%;
+    height: 100%;
+}
+.timeText{
+    position: absolute;
+    width:100%;
+    top:50%;
+    left:0;
+    margin-top: -8px;
+    color: #ff9600;
+    font-size: 14px;
+    text-align: center;
+}
+.stateContext{
+    position: absolute;
+    bottom:20%;
+    left: 50%;
+    font-size: 16px;
+    z-index: 160;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.5s linear;
+}
+
+.state1{
+    display: inline-block;
+    color: #ff9600;
+}
+.state2{
+    color: #53a7db;
+    display: inline-block;
+}
+.state3{
+    display: inline-block;
+    color: #45bc5b;
+}
+.section2{
+    background: url("../../images/codeBg01.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.sectionContent2{
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    height: 100px;
+    top:50%;
+    left: 5%;
+    margin-top: -100px;
+}
+.codeIntro{
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.codeIntroText{
+    font-size: 1.3em;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    width: 100%;
+    line-height: 25px
+}
+.section3{
+    background: url("../../images/codeBg02.png");
+    background-size: 100% 100%;
+}
+.sectionContainer3{
+    height: 100%;
+    width:85%;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+@media screen and (max-width: 1600px) {
+    .sectionContainer3{
+        width: 95%;
+    }
+}
+.sectionContent3{
+    width:100%;
+    position: absolute;
+    top:50%;
+    margin-top: -120px;
+    max-height: 120px;
+    min-height: 90px;
+}
+@media screen and (min-width: 1600px){
+    .sectionContent3{
+        height: 120px;
+    }
+}
+@media screen and (max-width: 1600px){
+    .sectionContent3{
+        height: 120px;
+    }
+}
+.navBtn{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    margin-top: 230px;
+    left: 50%;
+    margin-left: -240px;
+}
+.navBtn input{
+    width: 220px;
+    background: #0c1a27;
+    color: #fff;
+    font-size: 1.25em;
+    padding: 15px 0;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    display: block;
+    float: left;
+}
+.sectionContent3 li{
+    height:100%;
+}
+.card{
+    height: 100%;
+}
+.sectionContent3 li .Positive{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+@media screen and (min-width: 1600px) {
+    .sectionContent3 li .Positive {
+        padding-left:120px ;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .sectionContent3 li .Positive {
+        padding-left:100px ;
+    }
+}
+.sectionContent3 li .Positive .chong{
+    display: block;
+    position: absolute;
+    left:0px;
+    top:0;
+    background: url("../../images/push.png");
+    background-size: 100% 100%;
+    width: 120px;
+    height: 120px;
+}
+.sectionContent3 li .Positive .chong1{
+    display: block;
+    position: absolute;
+    left:0px;
+    top:0;
+    background: url("../../images/deposit.png");
+    background-size: 100% 100%;
+    width: 120px;
+    height: 120px;
+}
+.sectionContent3 li .Positive .intro{
+    display: inline-block;
+    padding: 20px 30px;
+    width: 100%;
+}
+.sectionContent3 li .Positive .intro .name{
+    color: #333;
+}
+.sectionContent3 li .Positive .intro .identify{
+    /*width: 300px;*/
+    margin-top: 10px;
+}
+.server{
+    float: left;
+    font-size: 1em;
+    font-weight: 300;
+}
+.address{
+    position: absolute;
+    float: right;
+    right: 20px;
+    font-size: 1em;
+    font-weight: 300;
+}
+.Negative{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.Negative p{
+    color: #333;
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.Negative a{
+    color: #3f9fad;
+    font-size: 1em;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 15px !important;
+}
+.aLink{
+    color: #3f9fad;
+}
+.section4{
+    background: url("../../images/codeBg03.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.banben{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    color: #b6b4b4;
+    font-size: 1em;
+    font-weight: 300;
+}
+.banben p{
+    margin-top: 10px;
+}
+.flip-container {
+    /*margin: 30px;*/
+    width: 100%;
+    height:100%;
+    display: inline-block;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    perspective: 500;  /*定义 3D 元素距视图的距离，以像素计。该属性允许您改变 3D 元素查看 3D 元素的视图，当为元素定义 perspective 属性时，其子元素会获得透视效果，而不是元素本身。*/
+    -ms-transform: perspective(500px);
+    -moz-transform: perspective(500px); /*重要，为 3D 转换元素定义透视视图*/
+    -webkit-transform: perspective(500px); /*重要，为 3D 转换元素定义透视视图*/
+    transform-style: preserve-3d; /*重要，使被转换的子元素保留其 3D 转换*/
+    -webkit-transform-style: preserve-3d; /*重要，使被转换的子元素保留其 3D 转换*/
+}
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    transform-style: preserve-3d; /*重要*/
+    -webkit-transform-style: preserve-3d;
+}
+/* 触发翻转 */
+.flipperTrans{
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+.front ,.back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;  /*重要，隐藏被旋转的 div 元素的背面*/
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+.front {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    z-index: 2;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 3px 0 0 3px;
+}
+.back {
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    background: #fff;
+    cursor: pointer;
+}
+.warn{
+    font-size: 1.5em !important;
+    margin-top: -8px !important;
+    margin-bottom: 10px !important;
+}
+.copyText{
+    position: relative;
+}
+.copy{
+    color: #3f9fad;
+    font-size: 0.875em;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right:0;
+    top:0;
+}
+.qq{
+    width: 100%;
+    height:30px;
+    background: #fff;
+}
+.contact{
+    width: 100%;
+    font-size: 0.85em !important;
+    padding-left: 35px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+@media screen and (max-width: 1600px) {
+    .contact{
+        margin-bottom: 2px !important;
+    }
+}
+.contact .qqIcon{
+    display: block;
+    position: absolute;
+    width:26px;
+    height: 30px;
+    left: 0;
+    top:13px;
+}
+.contact .qqIcon img{
+    width: 100%;
+    height:100%;
+}
+.nameLeft{
+    float: left;
+    font-size: 1.5em !important;
+    font-weight: 300;
+}
+.nameRight{
+    float: right;
+    color: #3f9fad;
+    font-size: 0.875em;
+}
+.clearfix:after{
+    content:"";
+    height:0;
+    line-height:0;
+    display:block;
+    visibility:hidden;
+    clear:both
+}
+.clearfix{
+    zoom: 1;
+}
+
+/* 登录页面 */
+#logPage{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.3);
+    top:0;
+    left: 0;
+    display: none;
+}
+#logPage .logContent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#logPage .logContent .logText{
+    width: 440px;
+    height: 390px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-top: -195px;
+    margin-left: -220px;
+    background: #fff;
+    border-radius: 4px
+}
+#logPage .logContent .logText .content{
+    width: 300px;
+    margin: 30px auto;
+}
+#logPage .logContent .logText .content .logClose{
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background:url('../../images/close.svg') no-repeat;
+    background-size: 100%;
+    top: 10px;
+    right: 10px;
+    cursor: pointer
+}
+.logText .content .topIcon{
+    width: 134px;
+    height: 44px;
+    margin: 0 auto
+}
+.logText .content .topIcon>img{
+    width: 100%;
+    height: 100%;
+}
+.logText .content .logWarn{
+    text-align: center;
+    font-size: 12px;
+    color: #e31a46;
+    margin-top: 18px;
+}
+.logText .content .logInput{
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+.logText .content .logInput>input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    outline: none;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #999999
+}
+.logText .content .logInput>span{
+    display: block;
+    position: absolute;
+}
+.logText .content .logInput1>input{
+    padding: 10px 10px 10px 50px
+}
+.logText .content .logInput1 .logBg1{
+    width: 25px;
+    height: 25px;
+    background: url('../../images/email.svg') no-repeat;
+    background-size: 100%;
+    top: 5px;
+    left: 13px
+}
+.logText .content .logInput1 .logBg2{
+    width: 20px;
+    height: 20px;
+    background: url('../../images/lock.svg') no-repeat;
+    background-size: 100%;
+    top: 8px;
+    left: 15px
+}
+.logText .content .logInput2>input{
+    padding: 10px 125px 10px 10px;
+}
+.logText .content .logInput2>img{
+    position: absolute;
+    display: block;
+    width: 122px;
+    height: 38px;
+    right: 0;
+    top: 0;
+    border-radius: 2px
+}
+.content .noKyc{
+    margin-top: 15px;
+    font-size: 12px;
+    color: #333333
+}
+.content .noKyc>a{
+    color:#00aaf4;
+    text-decoration: underline;
+    cursor: pointer
+}
+.content .logBtn{
+    width: 100%;
+    margin-top: 10px;
+}
+.content .logBtn>input{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    background: #00aaf4;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 2px
+}
+#errorReason{
+    margin-top: 15px;
+    color: #e31a46;
+    font-size: 12px
+}
+
+#error1{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 110;
+    background: rgba(0, 0, 0, 0.3);
+    top:0;
+    left: 0;
+    display: none
+}
+
+#error1 .logContent{
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+#error1 .logContent .logText{
+    width: 420px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-top: -165px;
+    margin-left: -210px;
+    background: #fff;
+    border-radius: 4px;
+}
+.logText .errorContent1{
+    height: 120px;
+    background: #f2f2f2;
+    border-radius: 4px 4px 0 0;
+    position: relative
+}
+.logText .errorContent1 .topIcon{
+    width: 110px;
+    height: 110px;
+    display: block;
+    position: absolute;
+    background: url('../../images/error.png') no-repeat;
+    background-size: 100%;
+    top: -55px;
+    left: 155px;
+}
+.logText .errorContent1 .leftIcon{
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    background:url('../../images/close.svg') no-repeat;
+    background-size: 100%;
+    top: 10px;
+    right: 10px;
+}
+.logText .errorContent1 .errorText{
+    color: #e31a46;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 70px
+}
+.logText .errorContent2 p{
+    color: #333 ;
+    font-size: 16px;
+    text-align: center
+
+}
+#errorText1{
+    margin-top: 50px;
+    display: none
+}
+#errorText2{
+    margin-top: 30px;
+    display:none;
+}
+.reLog {
+    width: 100%;
+    margin-top: 40px;
+}
+.reLog #toLog{
+    width: 300px;
+    margin: 0 auto;
+    padding: 12px 0;
+    color: #fff;
+    font-size: 14px;
+    background: #00aaf4;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    display: none;
+    margin-left: 60px
+}
+#certification{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 12px 0;
+    color: #fff;
+    font-size: 14px;
+    background: #00aaf4;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 60px
+}

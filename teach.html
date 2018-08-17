@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>COINQU</title>
+	<link rel="shortcut icon" href="./favicon.ico"/>
+	<script src="./public/js/jquery-1.11.2.min.js"></script>
+	<script src="./public/js/jquery.i18n.properties-min-1.0.9.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#teach{
+			width: 100%;
+			background: #fff;
+		}
+		.teachContent{
+			width: 900px;
+			margin: 0 auto;
+			padding: 40px 0;
+		}
+		
+		li{
+			list-style: none;
+			margin-top: 30px;
+		}
+		img{
+			width: 900px;
+			height: auto;
+			margin-top: 10px;
+		}
+		.warn{
+			width: 100%;
+			height:150px;
+			background: #fdeedd;
+			margin-top: 20px;
+			border-radius:4px;
+			position: relative;
+		}
+		.warnText{
+			padding-left: 150px;
+			text-align: left;
+			padding-top: 15px;
+			font-size: 1em;
+			color: #ff9c28;
+		}
+		.warnText p{
+			margin-top: 8px;
+		}
+		.warnText p a{
+			color: #49a9ee;
+		}
+		.light{
+			position: absolute;
+			width: 65px;
+			height:65px;
+			background: url("./public/images/light.png") no-repeat;
+			left: 40px;
+			top:45px;
+		}
+		.how{
+			text-align: center;
+			font-size: 2em;
+			color: #333;
+			margin-top: 40px;
+		}
+		.step{
+			display: inline-block;
+			width:34px;
+			height:34px;
+			line-height: 34px;
+			text-align: center;
+			background: #000000;
+			color: #fff;
+			border-radius: 17px;
+		}
+		.stepTitle{
+			font-size: 1.25em;
+			color: #333;
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.line{
+			display: inline-block;
+			width: 720px;
+			height: 5px;
+			border-top:2px solid #ccc;
+			position: absolute;
+			right:0;
+			top:15px;
+		}
+		.stepContent{
+			font-size: 1em;
+			color: #666666;
+			padding-left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="teach">
+		<div class="teachContent">
+			<h1><span style="font-family: kai">CODE</span> <span id="codeUse"></span></h1>
+			<div class="warn">
+				<span class="light"></span>
+				<div class="warnText">
+					<p id="warn1"></p>
+					<p>
+						<span id="warn2"></span>
+						（<a href="http://www.chaoex.com" target="_blank">www.chaoex.com</a>）
+						<span id="warn3"></span>
+					</p>
+					<p id="warn4"></p>
+					<p id="warn5"></p>
+				</div>
+			</div>
+			<div class="how">
+				<span id="how1"></span><span style="color: #ffd000;">CODE</span>
+			</div>
+			<ul>
+				<li>
+					<p style="position:relative;">
+						<span class="step">1</span>
+						<span class="stepTitle">STEP ONE</span>
+						<span class="line"></span>
+					</p>
+					<p id="contentp1" class="stepContent"></p>
+					<img src="./public/images/step1.png" alt="">
+				</li>
+				<li>
+					<p style="position:relative;">
+						<span class="step">2</span>
+						<span class="stepTitle">STEP TWO</span>
+						<span class="line"></span>
+					</p>
+					<p id="contentp2" class="stepContent"></p>
+					<img src="./public/images/step2.png" alt="">
+				</li>
+				<li>
+					<p style="position:relative;">
+						<span class="step">3</span>
+						<span class="stepTitle">STEP THREE</span>
+						<span class="line" style="width: 710px"></span>
+					</p>
+					<p id="contentp3" class="stepContent"></p>
+					<img src="./public/images/step3.png" alt="">
+				</li>
+				<li>
+					<p style="position:relative;">
+						<span class="step">4</span>
+						<span class="stepTitle">STEP FOUR</span>
+						<span class="line"></span>
+					</p>
+					<p id="contentp4" class="stepContent"></p>
+					<img src="./public/images/step4.png" alt="">
+				</li>
+			</ul>
+			<div class="how">
+				<span id="how2"></span><span style="color: #ffd000;">CODE</span>
+			</div>
+			<ul>
+				<li>
+					<p style="position:relative;">
+						<span class="step">1</span>
+						<span class="stepTitle">STEP ONE</span>
+						<span class="line"></span>
+					</p>
+					<p id="contentp5" class="stepContent"></p>
+					<img src="./public/images/step5.png" alt="">
+				</li>
+				<li>
+					<p style="position:relative;">
+						<span class="step">2</span>
+						<span class="stepTitle">STEP TWO</span>
+						<span class="line"></span>
+					</p>
+					<p id="contentp6" class="stepContent"></p>
+					<img src="./public/images/step6.png" alt="">
+				</li>
+				<li>
+					<p style="position:relative;">
+						<span class="step">3</span>
+						<span class="stepTitle">STEP THREE</span>
+						<span class="line" style="width: 710px"></span>
+					</p>
+					<p id="contentp7" class="stepContent"></p>
+					<img src="./public/images/step7.png" alt="">
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+        function myLan() {
+            if(window.sessionStorage["language"] == 'zh_cn' || window.sessionStorage['language' == '']){
+                $('.changeZi>img').attr('src','./public/images/chinese.png')
+                $('#chooseLan').html('简体中文')
+                jQuery.i18n.properties({
+                    name : 'strings_zh_cn', //资源文件名称
+                    path : './public/i18n/', //资源文件路径
+                    mode : 'map', //用Map的方式使用资源文件中的值
+                    language : 'zh',
+                    callback : function() {//加载成功后设置显示内容
+                        $('#codeUse').html($.i18n.prop('codeUse'));
+                        $('#contentp1').html($.i18n.prop('contentp1'));
+                        $('#contentp2').html($.i18n.prop('contentp2'));
+                        $('#contentp3').html($.i18n.prop('contentp3'));
+                        $('#contentp4').html($.i18n.prop('contentp4'));
+                        $('#contentp5').html($.i18n.prop('contentp5'));
+                        $('#contentp6').html($.i18n.prop('contentp6'));
+                        $('#contentp7').html($.i18n.prop('contentp7'));
+                        $('#warn1').html($.i18n.prop('warn1'));
+                        $('#warn2').html($.i18n.prop('warn2'));
+                        $('#warn3').html($.i18n.prop('warn3'));
+                        $('#warn4').html($.i18n.prop('warn4'));
+                        $('#warn5').html($.i18n.prop('warn5'));
+                        $('#how1').html($.i18n.prop('how1'));
+                        $('#how2').html($.i18n.prop('how2'));
+
+                    }
+                });
+            }else{
+                $('.changeZi>img').attr('src','./public/images/fanti.png')
+                $('#chooseLan').html('繁體中文')
+                jQuery.i18n.properties({
+                    name : 'strings_zh_hk', //资源文件名称
+                    path : './public/i18n/', //资源文件路径
+                    mode : 'map', //用Map的方式使用资源文件中的值
+                    language : 'zh-hk',
+                    callback : function() {//加载成功后设置显示内容
+                        $('#codeUse').html($.i18n.prop('codeUse'));
+                        $('#contentp1').html($.i18n.prop('contentp1'));
+                        $('#contentp2').html($.i18n.prop('contentp2'));
+                        $('#contentp3').html($.i18n.prop('contentp3'));
+                        $('#contentp4').html($.i18n.prop('contentp4'));
+                        $('#contentp5').html($.i18n.prop('contentp5'));
+                        $('#contentp6').html($.i18n.prop('contentp6'));
+                        $('#contentp7').html($.i18n.prop('contentp7'));
+                        $('#warn1').html($.i18n.prop('warn1'));
+                        $('#warn2').html($.i18n.prop('warn2'));
+                        $('#warn3').html($.i18n.prop('warn3'));
+                        $('#warn4').html($.i18n.prop('warn4'));
+                        $('#warn5').html($.i18n.prop('warn5'));
+                        $('#how1').html($.i18n.prop('how1'));
+                        $('#how2').html($.i18n.prop('how2'));
+                    }
+                });
+            }
+        }
+        $(function () {
+            myLan();
+        })
+	</script>
+</body>
+</html>

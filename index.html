@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>COINQU</title>
+	<!-- Bootstrap -->
+	<link href="./public/css/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./public/css/public/header.css">
+	<link rel="stylesheet" href="./public/css/index/index.css">
+	<link rel="stylesheet" href="./public/fullpage.js/dist/jquery.fullpage.css">
+	<link rel="stylesheet" href="./public/css/public/animate.css">
+	<link rel="shortcut icon" href="./favicon.ico"/>
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="./public/js/jquery-1.11.2.min.js"></script>
+	<script src="./public/js/index/jrj6out.js"></script>
+	<script src="./public/js/jquery.i18n.properties-min-1.0.9.js"></script>
+	<script>
+        try{Typekit.load({ async: false });}catch(e){}
+	</script>
+	<script src="./public/js/index/prefixfree.min.js"></script>
+	<script src="./public/js/index/index.js"></script>
+	<script src="./public/js/MD5.js"></script>
+	<style>
+		body{
+			min-width: 1230px;
+		}
+		#cardIntro{
+			width:100%;
+			position: absolute;
+			top:42%;
+			margin-top: -120px;
+			text-align: center;
+			color: #fff;
+			font-size: 1.25em;
+		}
+		.warn11{
+			font-size: 1em !important;
+			margin-top: -8px !important;
+			margin-bottom: 10px !important;
+			color: #ff9c28 !important;
+			line-height: 90px;
+		}
+		.contact a{
+			color: #111;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body onkeydown="keyLogin()">
+<div id="header" style="position:fixed;top: 0;right: 0;width: 100%">
+	<!-- <div class="topNav" style="min-width: 1100px">
+		<div class="container">
+		
+		</div>
+	</div> -->
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid container" style="min-width: 1100px">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="javascript:void(0)">
+						<img src="./public/images/coinqu_03.png" style="margin-top: 3px;width: 90px;height: auto"/>
+					</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+					        data-target="#example-navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav" id="myMenu">
+						<li class="navLi active" data-menuanchor="page1"><a href="#page1" id="homePage" style="font-weight: 300"></a></li>
+						<li class="navLi" data-menuanchor="page2"><a href="#page2" id="icoPro" style="font-weight: 300"></a></li>
+						<li class="navLi" data-menuanchor="page3"><a href="#page3" id="push" style="font-weight: 300"></a></li>
+						<li class="navLi" data-menuanchor="page4"><a href="#page4" id="icoCount" style="color: #0affff;font-weight: 300"></a></li>
+						<li class="navLi" onclick="checkLog()"><a href="http://explorer.coinqu.com/cn/" id="news" target="_blank" style="font-weight: 300"></a></li>
+						<li class="loginBtn" onclick="checkLog()"><a href="teach.html" id="teach" target="_blank" style="font-weight: 300"></a></li>
+						<li class="loginBtn" onclick="checkLog()" id="Login" style="color:#fff;font-weight:300"></li>
+						<li class="loginBtn" onclick="logOut()" id="Logout" style="color:#fff;font-weight:300;display:none"></li>
+						<li class="lan">
+							<div class="language">
+								<p class="changeZi" style="text-align: left"><img src="./public/images/chinese.png"/><span id="chooseLan"  style="font-weight: 300"></span></p>
+								<ul id="flexBox">
+									<li onclick="writeSession('zh_cn')">
+										<a href="javascript:void(0)">
+											<span><img src="./public/images/chinese.png"/></span>
+											<span style="font-weight: 300">简体中文</span>
+										</a>
+									</li>
+									<li onclick="writeSession('zh_hk')">
+										<a href="javascript:void(0)">
+											<span><img src="./public/images/fanti.png"/></span>
+											<span style="font-weight: 300">繁体中文</span>
+										</a>
+									</li>
+									<li onclick="writeSession('en')">
+										<a href="javascript:void(0)">
+											<span><img src="./public/images/english.png"/></span>
+											<span style="font-weight: 300"> &nbsp;English &nbsp;&nbsp;</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+</div>
+<div id="fullpage">
+	<div class="section">
+		<div class="canvas">
+			<div class="canvasAnimate">
+				<div class="intro-container">
+					<h1 style="font-weight: 300">JOIN COINQU TO EXPLORE MORE UNKNOWNS</h1>
+					<div class="button shift-camera-button">
+						<div class="border">
+							<div class="left-plane"></div>
+							<div class="right-plane"></div>
+						</div>
+						<div class="text" style="font-weight: 300">Enter</div>
+					</div>
+				</div>
+				<div class="sky-container">
+					<div class="sky-container-content">
+						<p class="content2" id="release"  style="font-weight: 300"></p>
+						<p class="content3" style="font-weight: 200!important;">CoinQu.com</p>
+					</div>
+				</div>
+				<div class="bottom-container">
+					<div class="button">
+						<div class="border">
+							<div class="left-plane"></div>
+							<div class="right-plane"></div>
+						</div>
+						<a href="teach.html" style="color: #fff" target="_blank" id='teach1' onclick='checkLog()'><div class="text" id="text" style="font-weight: 300"></div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section section2">
+		<div class="sectionContent2">
+			<p class="codeIntro" style="font-weight: 300"> <span id="codeIntro"></span></p>
+			<p id="codeIntroText1" class="codeIntroText" style="font-weight: 300"></p>
+			<p id="codeIntroText2" class="codeIntroText" style="font-weight: 300"></p>
+			<p id="codeIntroText3" class="codeIntroText" style="font-weight: 300"></p>
+			<!--<p id="codeIntroText3" class="codeIntroText" style="font-weight: 300"></p>-->
+		</div>
+	</div>
+	<div class="section section3">
+		<div class="sectionContent2">
+			<p class="codeIntro" style="margin-bottom: 50px;" id="codeIntro">
+				<img src="" style="width: 200px;height: auto">
+			</p>
+			<p id="weCode1" class="codeIntroText" style="font-weight: 300"></p>
+			<p id="weCode2" class="codeIntroText" style="font-weight: 300"></p>
+		</div>
+		<div class="banben" style="display:none" id="banben">
+			<p>英濟實業（香港）有限公司</p>
+			<p>Megaforce industrial corporation limited</p>
+			<p>Copyright©Megaforce industrial corporation limited</p>
+		</div>
+	</div>
+	<div class="section section4">
+		<div class="sectionContainer3">
+			<p id="cardIntro"></p>
+			<ul class="sectionContent3 row">
+				<!--1-->
+				
+				
+								<li class="col-md-4 col-sm-4 col-xs-4">
+					<div class="card">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<div class="Positive">
+										<span class="chong"></span>
+										<span class="intro">
+											<div class="name">
+												<div id="name2" class="nameLeft"></div>
+												<div class="nameRight">hdash</div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="identify">
+												<p class="copyText">
+													<span class="email" id="email2">jianzhengren3@coinqu.com</span>
+													<span class="copy">复制</span>
+												</p>
+											</div>
+											<div class="qq">
+												<p class="contact">
+													<!-- <a href="http://wpa.qq.com/msgrd?v=3&uin=3435767958&site=qq&menu=yes" target="_blank">
+														<span class="qqIcon"><img src="public/images/qqIcon.png" alt=""></span>
+														<span class="contant"></span>3 <span class="line"> </span>
+														&nbsp;&nbsp;343576***8
+													</a> -->
+													<a href="http://wpa.qq.com/msgrd?v=3&uin=3435767958&site=qq&menu=yes" target="_blank">
+														<span class="qqIcon"><img src="public/images/qqIcon.png" alt=""></span>
+														<span class="contant"></span>3 <span class="line"> </span>
+														&nbsp;&nbsp;3435767958
+													</a>
+												</p>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="back">
+									<div class="Negative">
+										<p class="warn name2"></p>
+										<a href="http://explorer.coinqu.com/cn/?address=cLwDghheMDi97gZmo31r2EXSrH3Dd6bXH7" target="_blank">cLwDghheMDi97gZmo31r2EXSrH3Dd6bXH7</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!--2-->
+<li class="col-md-4 col-sm-4 col-xs-4">
+				
+								
+					<div class="card">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<div class="Positive">
+										<span class="chong"></span>
+										<span class="intro">
+											<div class="name">
+												<div id="name5" class="nameLeft"></div>
+												<div class="nameRight">hdash</div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="identify">
+												<p class="copyText">
+													<span class="email" id="email5">jianzhengren4@coinqu.com</span>
+													<span class="copy">复制</span>
+												</p>
+											</div>
+											<div class="qq">
+												<p class="contact">
+													<!-- <a href="http://wpa.qq.com/msgrd?v=3&uin=3471218917&site=qq&menu=yes" target="_blank">
+														<span class="qqIcon"><img src="public/images/qqIcon.png" alt=""></span>
+														<span class="contant"></span>4 <span class="line"> </span>
+														&nbsp;&nbsp;347121***7
+													</a> -->
+													<a href="http://wpa.qq.com/msgrd?v=3&uin=3471218917&site=qq&menu=yes" target="_blank">
+														<span class="qqIcon"><img src="public/images/qqIcon.png" alt=""></span>
+														<span class="contant"></span>4 <span class="line"> </span>
+														&nbsp;&nbsp;3471218917
+													</a>
+												</p>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="back">
+									<div class="Negative">
+										<p class="warn name5"></p>
+										<a href="http://explorer.coinqu.com/cn/?address=c5xazVYBDU5pPzHSCCbChqmmDDigb7egX8" target="_blank">c5xazVYBDU5pPzHSCCbChqmmDDigb7egX8</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<!--3-->
+
+				
+								<li class="col-md-4 col-sm-4 col-xs-4">
+					<div class="card">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<div class="Positive">
+										<span class="chong"></span>
+										<span class="intro">
+											<div class="name">
+												<div id="name3" class="nameLeft"></div>
+												<div class="nameRight">hdash</div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="identify">
+												<p class="copyText">
+													<span class="email" id="email3">jianzhengren5@coinqu.com</span>
+													<span class="copy">复制</span>
+												</p>
+											</div>
+											<div class="qq">
+												<p class="contact">
+													<!-- <a href="http://wpa.qq.com/msgrd?v=3&uin=3478069130&site=qq&menu=yes" target="_blank">
+														<span class="qqIcon"><img src="public/images/qqIcon.png" alt=""></span>
+														<span class="contant"></span>5 <span class="line"> </span>
+														&nbsp;&nbsp;347806***0
+													</a> -->
+													<a href="http://wpa.qq.com/msgrd?v=3&uin=3478069130&site=qq&menu=yes" target="_blank">
+														<span class="qqIcon"><img src="public/images/qqIcon.png" alt=""></span>
+														<span class="contant"></span>5 <span class="line"> </span>
+														&nbsp;&nbsp;3478069130
+													</a>
+												</p>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="back">
+									<div class="Negative">
+										<p class="warn name3"></p>
+										<a href="http://explorer.coinqu.com/cn/?address=cEyxkYUXkyfUViDTHNbk3ZLZ3JfZGJCnuR" target="_blank">cEyxkYUXkyfUViDTHNbk3ZLZ3JfZGJCnuR</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!--4-->
+				<li class="col-md-4 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-sm-4 col-xs-4" style="margin-top: 50px">
+					<div class="card">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<div class="Positive">
+										<span class="chong"></span>
+										<span class="intro">
+											<div class="name">
+												<div id="name1" class="nameLeft"></div>
+												<div class="nameRight">hdash</div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="identify">
+												<p class="copyText">
+													<span class="email" id="email1">jianzhengren2@coinqu.com</span>
+													<span class="copy">复制</span>
+												</p>
+											</div>
+											<div class="qq">
+												<p class="contact">
+													<!-- <a href="http://wpa.qq.com/msgrd?v=3&uin=2110181920&site=qq&menu=yes" target="_blank">
+														<span class="qqIcon"><img src="public/images/qqIcon.png" alt=""></span>
+														<span class="contant"></span>2 <span class="line"> </span>
+														&nbsp;&nbsp;211018***0
+													</a> -->
+													<a href="http://wpa.qq.com/msgrd?v=3&uin=2110181920&site=qq&menu=yes" target="_blank">
+														<span class="qqIcon"><img src="public/images/qqIcon.png" alt=""></span>
+														<span class="contant"></span>2 <span class="line"> </span>
+														&nbsp;&nbsp;2110181920
+													</a>
+												</p>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="back">
+									<div class="Negative">
+										<p class="warn name1"></p>
+										<a href="http://explorer.coinqu.com/cn/?address=c3Cbq3MHvD73FSCu4WRy7hVSsQfwfKg1nL" target="_blank">c3Cbq3MHvD73FSCu4WRy7hVSsQfwfKg1nL</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!--5-->
+				<li class="col-md-4 col-sm-4 col-xs-4" style="margin-top: 50px">
+				
+					<div class="card">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<div class="Positive">
+										<span class="chong"></span>
+										<span class="intro">
+											<div class="name">
+												<div id="name4" class="nameLeft"></div>
+												<div class="nameRight"></div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="identify">
+												<p class="copyText">
+													<span class="email" id="email4">jianzhengren1@coinqu.com</span>
+													<span class="copy">复制</span>
+												</p>
+											</div>
+											<div class="qq">
+												<p class="contact">
+													<a href="http://wpa.qq.com/msgrd?v=3&uin=3330291716&site=qq&menu=yes" target="_blank">
+														<span class="qqIcon"><img src="public/images/qqIcon.png" alt=""></span>
+														<span class="contant"></span>1 <span class="line"> </span>
+														&nbsp;&nbsp;3330291716
+													</a>
+												</p>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="back">
+									<div class="Negative">
+										<p class="warn name4"></p>
+										<a href="http://explorer.coinqu.com/cn/?address=cHzGA8apoJiPRVSU8Bp5zvSERMe5TxcFy7" target="_blank">cHzGA8apoJiPRVSU8Bp5zvSERMe5TxcFy7</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+			<div class="navBtn">
+				<a href="http://explorer.coinqu.com/cn/" target="_blank">
+					<input type="button" id="nav">
+				</a>
+				<a href="teach.html" target="_blank">
+					<input type="button" id="nav1" style="margin-left: 40px">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="logPage">
+	<div class="logContent">
+		<div class="logText">
+			<div class="content">
+				<a href="#page1"><span class="logClose" onclick="closeLog()"></span></a>
+				<div class="topIcon">
+					<img src="./public/images/coinquLogo.png" alt="">
+				</div>
+				<p class="logWarn"></p>
+				<div class="logInput logInput1" style="margin-top:20px">
+					<span class="logBg1"></span>
+					<input type="text" class="logInp1 logIp1" id="logIp1">
+				</div>
+				<div class="logInput logInput1">
+					<span class="logBg2"></span>
+					<input type="password" class="logInp1 logIp2" id="logIp2">
+				</div>
+				<div class="logInput logInput2">
+					<input type="text" class="logInp1" id='logIp3'>
+					<img src="" alt="" id="imgSrc" onclick="changePic()" style="cursor:pointer">
+				</div>
+				<p class="noKyc"> <span class="kycText"></span><a class="kyc" href="https://www.chaoex.com/certification" target="_blank"></a></p>
+				<p id="errorReason"></p>
+				<div class="logBtn">
+					<input type="button" class="logIp3" onclick="logIn()" id="Log">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="error1">
+	<div class="logContent">
+		<div class="logText">
+			<div class="errorContent1">
+				<span class="topIcon"></span>
+				<a href="#page1"><span class="leftIcon" onclick='closeError()'></span></a>
+				<p class="errorText"></p>
+			</div>
+			<div class="errorContent2">
+				<div id="errorText1">
+					<p class="errorText1"></p>
+				</div>
+				<div id="errorText2">
+					<p class="errorText2"></p>
+					<p class="errorText3" style="margin-top:10px"></p>
+				</div>
+			</div>
+			<div class="reLog">
+				<a id="certification" href="https://www.chaoex.com/certification" target="_blank"></a>
+				<input id="toLog" type="button" class='relogBtn' onclick='toLog()'>
+			</div>
+		</div>
+	</div>
+</div>
+<script src='./public/js/index/TweenMax.min.js'></script>
+<script src='./public/js/index/three.min.js'></script>
+<script src="./public/css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="./public/fullpage.js/dist/jquery.fullpage.js"></script>
+<script src="./public/js/home.js"></script>
+<!--<script>-->
+    <!--var online = new Array();-->
+<!--</script>-->
+<!--<script type= "text/javascript" src="http://wpa.qq.com/getonline?Type=1&1503576178:793666052:3435767958:3471218917:3478069130:" ></script>-->
+</body>
+</html>
